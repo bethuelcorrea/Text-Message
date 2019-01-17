@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div style="padding:10px;">
+			<h1>Text Message</h1>
+
+        <form id="sms" name="sms" method="post" action="send.php">
+            
+              
+                From:<br>
+                <input name="from" type="text" id="from" size="30" />  <br>            
+              
+                To: Phone Number<br>
+                <input name="to" type="text" id="to" size="30" /> <br>             
+              
+                Carrier:<br>
+                <select name="carrier" id="carrier">
+                  <option value="verizon">Verizon</option>
+                  <option value="tmobile">T-Mobile</option>
+                  <option value="sprint">Sprint</option>
+                  <option value="att">AT&amp;T</option>
+                  <option value="virgin">Virgin Mobile</option>
+                  <option value="metropcs">metropcs</option>
+                </select>
+              
+              
+                <br>Message:<br>
+                <textarea name="message" cols="40" rows="5" id="message"></textarea><br>
+              
+              
+                <input type="submit" name="Submit" value="Submit" />
+                
+            
+            </form>
+
+</div>    
+</body>
+</html>
