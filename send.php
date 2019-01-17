@@ -12,7 +12,7 @@ header ("Location: sms_error.php");
 else if ($carrier == "verizon") {
 $formatted_number = $to."@vtext.com";
 mail("$formatted_number", "LHM Poll: $from", "$message" , "$header"); 
-// Currently, the subject is set to "SMS". Feel free to change this.
+// Currently, the subject is set to "LHM Poll". Feel free to change this.
 
 header ("Location: sms_success.php");
 }
